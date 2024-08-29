@@ -16,6 +16,8 @@ COPY mysql-connector.jar /opt/apache-tomcat-9.0.93/lib
 
 COPY context.xml /opt/apache-tomcat-9.0.93/conf
 
+RUN chmod +rwx /opt/apache-tomcat-9.0.93/bin/*.sh
+
 EXPOSE 8080
 
 CMD ["opt/apache-tomcat-9.0.93/bin/catalina.sh", "run"]
