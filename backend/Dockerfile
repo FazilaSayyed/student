@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 LABEL Backend="studentapp"
 
-ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.zip  
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.zip /opt 
 
 WORKDIR /opt/
 
