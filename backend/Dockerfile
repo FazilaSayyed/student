@@ -18,4 +18,4 @@ COPY context.xml /opt/apache-tomcat-9.0.93/conf
 
 Expose 8080
 
-CMD["opt/apache-tomcat-9.0.93/bin/catalina.sh", "run"]
+CMD ["opt/apache-tomcat-9.0.93/bin/catalina.sh", "run"]
